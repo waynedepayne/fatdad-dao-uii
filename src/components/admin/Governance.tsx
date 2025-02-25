@@ -15,13 +15,9 @@ const Governance = () => {
           <button className="p-2 hover:bg-neutral-100 rounded-full">
             <i className="fa-solid fa-bell"></i>
           </button>
-          <Image
-            src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=456"
-            alt="Profile" 
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
+          <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
+            <i className="fa-solid fa-user text-neutral-500"></i>
+          </div>
         </div>
       </header>
       
@@ -129,13 +125,9 @@ const Governance = () => {
           <div className="space-y-4">
             <div className="flex items-center justify-between p-3 border rounded-lg user-row">
               <div className="flex items-center gap-3">
-                <Image 
-                  src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=789" 
-                  width={32} 
-                  height={32} 
-                  alt="User avatar" 
-                  className="rounded-full"
-                />
+                <div className="w-8 h-8 bg-neutral-100 rounded-full flex items-center justify-center">
+                  <i className="fa-solid fa-user text-neutral-500"></i>
+                </div>
                 <div>
                   <p className="font-medium">0x1234...5678</p>
                   <p className="text-sm text-neutral-500">Founder</p>

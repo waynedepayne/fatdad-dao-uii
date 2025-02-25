@@ -15,13 +15,9 @@ const Treasury = () => {
           <button className="p-2 hover:bg-neutral-100 rounded-full">
             <i className="fa-solid fa-bell"></i>
           </button>
-          <Image
-            src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=456"
-            alt="Profile"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
+          <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
+            <i className="fa-solid fa-user text-neutral-500"></i>
+          </div>
         </div>
       </header>
       
@@ -131,13 +127,9 @@ const Treasury = () => {
               <td className="py-4">250,000 USDC</td>
               <td className="py-4">
                 <div className="flex items-center">
-                  <Image 
-                    src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=789" 
-                    width={24} 
-                    height={24} 
-                    alt="User avatar" 
-                    className="rounded-full mr-2"
-                  />
+                  <div className="w-8 h-8 bg-neutral-100 rounded-full flex items-center justify-center mr-2">
+                    <i className="fa-solid fa-user text-neutral-500"></i>
+                  </div>
                   <span>alex.eth</span>
                 </div>
               </td>

@@ -12,7 +12,9 @@ export default function Proposals() {
             <button className="p-2 hover:bg-neutral-100 rounded-full">
               <i className="fa-solid fa-bell"></i>
             </button>
-            <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&amp;seed=456" className="w-10 h-10 rounded-full" />
+            <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
+              <i className="fa-solid fa-user text-neutral-500"></i>
+            </div>
           </div>
         </div>
         <p className="text-neutral-600 mb-8">View, review, and manage all active, pending, or finalized proposals.</p>

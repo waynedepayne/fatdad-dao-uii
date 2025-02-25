@@ -59,13 +59,9 @@ export default function Dashboard() {
             <button className="p-2 hover:bg-neutral-100 rounded-full">
               <i className="fa-solid fa-bell"></i>
             </button>
-            <Image
-              src="https://api.dicebear.com/7.x/notionists/svg?scale=200&seed=123"
-              alt="Profile"
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
+            <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
+              <i className="fa-solid fa-user text-neutral-500"></i>
+            </div>
           </div>
         </header>
 
