@@ -1,0 +1,58 @@
+/* Announcements specific styles */
+
+.announcement-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.announcement-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
+
+.announcement-item {
+  transition: background-color 0.15s ease;
+}
+
+.announcement-item:hover {
+  background-color: rgba(243, 244, 246, 0.7);
+}
+
+.quick-link {
+  transition: all 0.2s ease;
+}
+
+.quick-link:hover {
+  transform: translateY(-1px);
+  border-color: #d1d5db;
+}
+
+.channel-update {
+  transition: all 0.2s ease;
+}
+
+.channel-update:hover {
+  transform: translateY(-1px);
+  background-color: rgba(243, 244, 246, 0.7);
+}
+
+/* Dark mode adjustments */
+.dark .announcement-card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .announcement-item,
+.dark .channel-update {
+  background-color: #111827;
+  border-color: #374151;
+}
+
+.dark .quick-link {
+  border-color: #374151;
+}
+
+.dark .announcement-item:hover,
+.dark .channel-update:hover,
+.dark .quick-link:hover {
+  background-color: rgba(55, 65, 81, 0.5);
+} 
