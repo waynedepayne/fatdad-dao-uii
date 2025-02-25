@@ -24,11 +24,11 @@
 }
 
 /* Override wallet adapter default styles */
-:global(.wallet-adapter-button-start-icon) {
+.walletButtonWrapper :global(.wallet-adapter-button-start-icon) {
   margin-right: 8px !important;
 }
 
-:global(.wallet-adapter-dropdown-list) {
+.walletButtonWrapper :global(.wallet-adapter-dropdown-list) {
   background-color: #1a1a1a !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 12px !important;
@@ -45,7 +45,7 @@
   overflow-y: auto !important;
 }
 
-:global(.wallet-adapter-dropdown-list-item) {
+.walletButtonWrapper :global(.wallet-adapter-dropdown-list-item) {
   border-radius: 8px !important;
   margin: 4px !important;
   font-family: 'Inter', sans-serif !important;
@@ -57,25 +57,25 @@
   align-items: center !important;
 }
 
-:global(.wallet-adapter-dropdown-list-item:hover) {
+.walletButtonWrapper :global(.wallet-adapter-dropdown-list-item:hover) {
   background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 /* Fix for wallet icons */
-:global(.wallet-adapter-dropdown-list-item img),
-:global(.wallet-adapter-button-start-icon img) {
+.walletButtonWrapper :global(.wallet-adapter-dropdown-list-item img),
+.walletButtonWrapper :global(.wallet-adapter-button-start-icon img) {
   width: 20px !important;
   height: 20px !important;
   margin-right: 8px !important;
   border-radius: 4px !important;
 }
 
-/* Fix for wallet modal */
-:global(.wallet-adapter-modal) {
+/* Global styles for wallet modal that appears at the root level */
+.globalWalletStyles :global(.wallet-adapter-modal) {
   z-index: 9999 !important;
 }
 
-:global(.wallet-adapter-modal-wrapper) {
+.globalWalletStyles :global(.wallet-adapter-modal-wrapper) {
   background-color: #1a1a1a !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 16px !important;
@@ -83,16 +83,16 @@
   backdrop-filter: blur(10px) !important;
 }
 
-:global(.wallet-adapter-modal-button-close) {
+.globalWalletStyles :global(.wallet-adapter-modal-button-close) {
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-:global(.wallet-adapter-modal-title) {
+.globalWalletStyles :global(.wallet-adapter-modal-title) {
   font-family: 'Inter', sans-serif !important;
   color: white !important;
 }
 
-:global(.wallet-adapter-modal-content) {
+.globalWalletStyles :global(.wallet-adapter-modal-content) {
   font-family: 'Inter', sans-serif !important;
   color: rgba(255, 255, 255, 0.7) !important;
 } 

@@ -1,4 +1,4 @@
-import { FC, useCallback, useState } from 'react';
+import { FC, useCallback, useState, useEffect } from 'react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { useWallet } from '@solana/wallet-adapter-react';
 import styles from './StyledWalletButton.module.css';
@@ -10,6 +10,14 @@ interface StyledWalletButtonProps {
 export const StyledWalletButton: FC<StyledWalletButtonProps> = ({ className }) => {
   const { wallet, connect, connecting, connected, select, wallets } = useWallet();
   const [error, setError] = useState<Error | null>(null);
+  
+  // Add global wallet styles to the document body
+  useEffect(() => {
+    document.body.classList.add(styles.globalWalletStyles);
+    return () => {
+      document.body.classList.remove(styles.globalWalletStyles);
+    };
+  }, []);
   
   const handleClick = useCallback(async (e: React.MouseEvent) => {
     if (connected) return; // If already connected, let the default dropdown behavior work
